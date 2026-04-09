@@ -1,0 +1,27 @@
+{
+  "name": "mobile-automation-agent",
+  "version": "1.0.0",
+  "description": "AI-driven mobile automation agent using MCP Server + Appium + BrowserStack App Automate",
+  "main": "dist/server/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/server/index.ts",
+    "test": "ts-node tests/examples/sample-test.ts",
+    "upload": "ts-node scripts/upload-app.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "form-data": "^4.0.0",
+    "node-fetch": "^2.7.0",
+    "webdriverio": "^8.39.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/form-data": "^2.5.0",
+    "@types/node": "^20.14.0",
+    "@types/node-fetch": "^2.6.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
